@@ -1,7 +1,7 @@
 from Bio.Seq import Seq
 
 # ===============================
-# VALIDATION SEQUENCE UTILISATEUR
+# USER SEQUENCE VALIDATION
 # ===============================
 while True:
     adn_input = input("Entre une séquence ADN (A,T,C,G) : ").upper()

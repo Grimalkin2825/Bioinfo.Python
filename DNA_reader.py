@@ -9,14 +9,14 @@ while True:
     sequence_valide = True
     for base in adn_input:
         if base not in "ATCG":
-            print("❌ Séquence invalide ! Veuillez recommencer.")
+            print(" Séquence invalide ! Veuillez recommencer.")
             sequence_valide = False
             break
 
     if sequence_valide and adn_input != "":
         break
 
-print("✅ Séquence validée :", adn_input)
+print(" Séquence validée :", adn_input)
 
 # Objet BioPython (pour les fonctions BioPython)
 adn = Seq(adn_input)
@@ -88,5 +88,5 @@ def translate_six_frames(dna):
         prot = translate_frame(rev, frame)
         print(f"Frame -{frame+1}: {prot}")
 
-# ▶️ LANCEMENT
+#  LANCEMENT
 translate_six_frames(adn_input)
